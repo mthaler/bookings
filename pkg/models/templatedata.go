@@ -11,3 +11,4 @@ type TemplateData struct {
 	Warning   string
 	Error     string
 }
+
