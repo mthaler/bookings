@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	"github.com/alexedwards/scs/v2"
-	"github.com/mthaler/bookings/pkg/config"
-	"github.com/mthaler/bookings/pkg/handlers"
-	"github.com/mthaler/bookings/pkg/render"
+	"github.com/mthaler/bookings/internal/config"
+	"github.com/mthaler/bookings/internal/handlers"
+	"github.com/mthaler/bookings/internal/render"
 	"log"
 	"net/http"
 	"time"

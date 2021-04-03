@@ -3,9 +3,9 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/mthaler/bookings/pkg/config"
-	"github.com/mthaler/bookings/pkg/models"
-	"github.com/mthaler/bookings/pkg/render"
+	"github.com/mthaler/bookings/internal/config"
+	"github.com/mthaler/bookings/internal/models"
+	"github.com/mthaler/bookings/internal/render"
 	"log"
 	"net/http"
 )
