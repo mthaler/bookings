@@ -10,11 +10,11 @@ import (
 	"github.com/mthaler/bookings/internal/config"
 	"github.com/mthaler/bookings/internal/models"
 	"github.com/mthaler/bookings/internal/render"
+	"html/template"
 	"log"
 	"net/http"
 	"path/filepath"
 	"time"
-	"html/template"
 )
 
 var app config.AppConfig
