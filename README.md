@@ -105,3 +105,9 @@ DEBU[2021-05-10T11:07:23+02:00] Chdir: /home/johndoe/go/src/bookings
 DEBU[2021-05-10T11:07:23+02:00] File: /home/johndoe/go/src/bookings/migrations/20210510090723_create_user_table.up.fizz
 DEBU[2021-05-10T11:07:23+02:00] File: /home/johndoe/go/src/bookings/migrations/20210510090723_create_user_table.down.fizz
 ```
+
+Run the migration using the following command:
+
+```bash
+$ soda migrate
+```
