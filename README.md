@@ -79,3 +79,11 @@ To install Soda, run the following command:
 ```bash
 $ go get github.com/gobuffalo/pop/...
 ```
+
+Run soda from the Goland terminal:
+
+```bash
+$ soda -v
+v5.3.1
+```
+If the output is `soda: command not found`, at it to `PATH`.
