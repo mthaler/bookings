@@ -111,3 +111,7 @@ Run the migration using the following command:
 ```bash
 $ soda migrate
 ```
+
+pgAdmin should now show the users table:
+
+![users table](screenshots/users_table.jpg)
