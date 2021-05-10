@@ -87,3 +87,21 @@ $ soda -v
 v5.3.1
 ```
 If the output is `soda: command not found`, at it to `PATH`.
+
+### Configure Soda
+
+Copy the `database.yml.example` to `database.yml` and fill out username and password.
+
+### Create users table
+
+Run the following command to create a migrations file:
+
+```bash
+$ soda generate fizz CreateUserTable
+v5.3.1
+
+DEBU[2021-05-10T11:07:23+02:00] Step: 9bf35aef
+DEBU[2021-05-10T11:07:23+02:00] Chdir: /home/johndoe/go/src/bookings
+DEBU[2021-05-10T11:07:23+02:00] File: /home/johndoe/go/src/bookings/migrations/20210510090723_create_user_table.up.fizz
+DEBU[2021-05-10T11:07:23+02:00] File: /home/johndoe/go/src/bookings/migrations/20210510090723_create_user_table.down.fizz
+```
