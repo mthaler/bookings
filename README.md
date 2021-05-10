@@ -17,7 +17,7 @@ On Debian Linux, PostgreSQL can be installed with the following command:
 
 Both the default database user and default database are called postgres
 
-## Create a user and database for the system user
+### Create a user and database for the system user
 
 By default, Postgres uses a concept called “roles” to handle authentication and authorization.
 After installation Postgres is set up to use ident authentication, meaning that it associates Postgres roles with a matching Unix/Linux system account.
@@ -44,7 +44,7 @@ $ psql
 username=# \q
 ```
 
-## Create bookings user and database
+### Create bookings user and database
 
 After setting up a user for the local system user, we no longer need to switch to the postgres account to run postgres commands.
 Add an bookings postgres user:
@@ -60,7 +60,7 @@ To create the bookings database, run the follwing command:
 ```bash
 $ createdb -O bookings bookings 
 ```
-## Install PGAdmin
+### Install PGAdmin
 
 [pgAdmin](https://www.pgadmin.org/) is a popular feature-rich open source database administration tool for PostgreSQL. 
 Follow the instructions on the web site to install it.
@@ -69,3 +69,13 @@ On Debian Linux, pgAdmin is installed in `/usr/pgadnmin4`. Start pgAdmin and cre
 The name should be localhost, switch to the connection tab and enter the required information:
 
 ![Database Connection](screenshots/connection.jpg)
+
+## Install Soda
+
+[Soda](https://gobuffalo.io/en/docs/db/getting-started/) (which is also called Pop) can be used to run SQL migrations.
+
+To install Soda, run the following command:
+
+```bash
+$ go get github.com/gobuffalo/pop/...
+```
