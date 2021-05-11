@@ -115,3 +115,13 @@ $ soda migrate
 pgAdmin should now show the users table:
 
 ![users table](screenshots/users_table.jpg)
+
+## Install PGX
+
+[pgx](https://github.com/jackc/pgx) is a pure Go driver and toolkit for PostgreSQL.
+
+### Installation
+
+```bash
+$ go get github.com/jackc/pgx/v4
+```
