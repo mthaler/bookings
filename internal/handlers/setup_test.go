@@ -15,6 +15,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"testing"
 	"time"
 )
 
@@ -23,9 +24,13 @@ var session *scs.SessionManager
 var pathToTemplates = "./../../templates"
 var functions = template.FuncMap{}
 
-func getRoutes() http.Handler {
-	// what am I going to put in the session
+
+func TestMain(m *testing.M) {
 	gob.Register(models.Reservation{})
+	gob.Register(models.User{})
+	gob.Register(models.Room{})
+	gob.Register(models.Restriction{})
+	gob.Register(map[string]int{})
 
 	// change this to true when in production
 	app.InProduction = false
@@ -36,7 +41,6 @@ func getRoutes() http.Handler {
 	errorLog := log.New(os.Stdout, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
 	app.ErrorLog = errorLog
 
-	// set up the session
 	session = scs.New()
 	session.Lifetime = 24 * time.Hour
 	session.Cookie.Persist = true
@@ -55,9 +59,13 @@ func getRoutes() http.Handler {
 
 	repo := NewTestRepo(&app)
 	NewHandlers(repo)
-
 	render.NewRenderer(&app)
 
+	os.Exit(m.Run())
+}
+
+
+func getRoutes() http.Handler {
 	mux := chi.NewRouter()
 
 	mux.Use(middleware.Recoverer)
