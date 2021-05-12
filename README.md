@@ -116,7 +116,7 @@ pgAdmin should now show the users table:
 
 ![users table](screenshots/users_table.jpg)
 
-## Install PGX
+## PGX
 
 [pgx](https://github.com/jackc/pgx) is a pure Go driver and toolkit for PostgreSQL.
 
@@ -133,4 +133,16 @@ $ go get github.com/jackc/pgx/v4
 
 ```bash
 $ go get github.com/xhit/go-simple-mail/v2
+```
+
+## MailHog
+
+MailHog is an email testing tool for developers
+
+### Installation
+
+From a terminal (not GoLand) run:
+
+```bash
+$ go get github.com/mailhog/MailHog
 ```
