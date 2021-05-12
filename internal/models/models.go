@@ -1,6 +1,8 @@
 package models
 
-import "time"
+import (
+	"time"
+)
 
 // User is the user model
 type User struct {
@@ -66,5 +68,4 @@ type MailData struct {
 	From     string
 	Subject  string
 	Content  string
-	Template string
 }
