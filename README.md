@@ -141,8 +141,16 @@ MailHog is an email testing tool for developers
 
 ### Installation
 
-From a terminal (not GoLand) run:
+From a terminal run:
 
 ```bash
 $ go get github.com/mailhog/MailHog
 ```
+
+Start MailHog by running
+
+```bash
+$ ~/go/bin/MailHog
+```
+
+Open `http://localhost:8025/` in a browser to show the web UI.
