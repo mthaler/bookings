@@ -125,3 +125,12 @@ pgAdmin should now show the users table:
 ```bash
 $ go get github.com/jackc/pgx/v4
 ```
+
+## Mail
+[Go Simple Mail](https://github.com/xhit/go-simple-mail) is a Golang package to send email. It support keep alive connection, TLS and SSL.
+
+### Installation
+
+```bash
+$ go get github.com/xhit/go-simple-mail/v2
+```
