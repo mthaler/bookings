@@ -147,6 +147,10 @@ From a terminal run:
 $ go get github.com/mailhog/MailHog
 ```
 
+## Admin template
+
+
+
 Start MailHog by running
 
 ```bash
@@ -158,3 +162,7 @@ Open `http://localhost:8025/` in a browser to show the web UI.
 ## Styling emails
 
 [Foundation for Emails](https://get.foundation/emails.html) is a CSS framework to style emails. Download the CSS version.
+
+## Admin template
+
+[RoyalUI](https://github.com/BootstrapDash/RoyalUI-Free-Bootstrap-Admin-Template) is a highly responsive template built with the latest version of Bootstrap, CSS, HTML5, jQuery, and SASS that can be used for a dashboard.
