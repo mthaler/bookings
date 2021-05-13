@@ -154,3 +154,7 @@ $ ~/go/bin/MailHog
 ```
 
 Open `http://localhost:8025/` in a browser to show the web UI.
+
+## Styling emails
+
+[Foundation for Emails](https://get.foundation/emails.html) is a CSS framework to style emails. Download the CSS version.
