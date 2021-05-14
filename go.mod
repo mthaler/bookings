@@ -24,7 +24,7 @@ require (
 	github.com/jackc/pgx/v4 v4.11.0
 	github.com/justinas/nosurf v1.1.1
 	github.com/spf13/cobra v1.1.3 // indirect
-	github.com/xhit/go-simple-mail/v2 v2.9.0 // indirect
+	github.com/xhit/go-simple-mail/v2 v2.9.0
 	golang.org/x/crypto v0.0.0-20210322153248-0c34fe9e7dc2
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
 )
