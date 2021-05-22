@@ -1,11 +1,28 @@
 # Bookings and Reservations
 
-The repository for [Building Modern Web Applications with Go](https://www.udemy.com/course/building-modern-web-applications-with-go/?referralCode=0415FB906223F10C6800).
+The bookings web application from the [Building Modern Web Applications with Go](https://www.udemy.com/course/building-modern-web-applications-with-go/?referralCode=0415FB906223F10C6800) course on Udemy.
 
-- Built in Go version 1.15
-- Uses the [chi router](github.com/go-chi/chi)
-- Uses [alex edwards scs session management](github.com/alexedwards/scs)
-- Uses [nosurf](github.com/justinas/nosurf)
+The web application provides basic functionality to make reservations and manage reservations. It uses Postgres to store reservations.
+
+Home page:
+
+![Home page](screenshots/home.jpg)
+
+One of the two available accommodations:
+
+![General's quarter](screenshots/generals_quarter.jpg)
+
+Make reservation:
+
+![Make reservation](screenshots/make_reservation.jpg)
+
+An administrator dashboard is available to display all reservations:
+
+![All reservations](screenshots/all_reservations.jpg)
+
+Reservation calendar:
+
+![Reservation calendar](screenshots/reservation_calendar.jpg)
 
 ## Install PostgreSQL
 
